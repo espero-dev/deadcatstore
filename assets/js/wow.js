@@ -1,6 +1,9 @@
-setInterval(() => {
-    console.log("Page is still alive at", new Date());
-}, 60000); // Every 60 seconds
+window.onload = function() {
+    console.log("Page has fully loaded!");
+    setInterval(() => {
+        console.log("Page is still alive at", new Date());
+    }, 60000); // Every 60 seconds
+};
 
 /*setInterval(() => {
     fetch('/keep-alive', {
